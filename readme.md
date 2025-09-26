@@ -62,7 +62,5 @@ As described, the labels are done repeatedly by 12 expert annotators, so they ar
 Also it contains lots of variety on video types. 
 
 I plan to pre-process frames into frames of 224 x 224 resolution. I plan to use 30% (~5k) of the full dataset here due to technlogy limitation and 
-follow a 80-10-10 train/test/val pattern for performance evaluation. 
-
-So in total I will use about 15k data for the pre-training process and then test and validate on the rest 20% seperately. 
-
+follow a 80-10-10 train/test/val pattern for performance evaluation. Across the three datasets, I will use ~15k clips for pre-training. For each dataset, 
+I follow an 80–10–10 split, where the 20% (val and test) is reserved for evaluation. I will do this project on my own. 
