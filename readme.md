@@ -30,7 +30,10 @@ expression classification, and multi-modal compound expression classification.
 
 The annotations are trustworthy since each video clip is analyzed then given label by 11 trained staff, and this is one of the main reason
 that I want to use this dataset. Also, there are clean labels here, which is the other important factor here as we know the better the data
-quality the higher chance we can get more robust and better results from models when they make predictions.
+quality the higher chance we can get more robust and better results from models when they make predictions. 
+
+This data set has pre-processed frames for each video clip in 224 x 224 resolution. I plan to use 50% (~5k) of the full dataset here due to 
+technlogy limitation and follow a 80-10-10 train/test/val pattern for performance evaluation. 
 
 2. FERV39K: https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_FERV39k_A_Large-Scale_Multi-Scene_Dataset_for_Facial_Expression_Recognition_in_CVPR_2022_paper.pdf
 The open dataset, FERV39K, a large-scale multi-scene dataset, coined as FERV39k. This dataset is novel due to the following
@@ -45,6 +48,9 @@ to CAs. CAs are asked to choose the most likely word or “PASS” on the platfo
 Flag-Recaptured Statistic method. They design 80% and 40% correct rates as two thresholds and mark copies as unacceptable (UA), Improper (IP) and Accept (AC). 
 The IP and AC groups will be passed to PRs for judgement, which also made this labeling process reliable. 
 
+I plan to pre-process frames into frames of 224 x 224 resolution. I plan to use 10% (~4k) of the full dataset here due to technlogy limitation 
+and follow a 80-10-10 train/test/val pattern for performance evaluation. 
+
 3. DFEW, link: https://dfew-dataset.github.io/
 Dynamic Facial Expression in-the-Wild (DFEW) is a large-scale facial expression database with 16372 very challenging video clips taken from movies. Clips in the
 DFEW database are of various challenging interferences, such as extreme illumination, occlusions, and capricious pose changes. Based on the crowdsourcing annotations,
@@ -54,3 +60,9 @@ annotations, including: (1). 16372 number of very challenging video clips from m
 
 As described, the labels are done repeatedly by 12 expert annotators, so they are reasonably to be considered as reliable annotations for training purposes. 
 Also it contains lots of variety on video types. 
+
+I plan to pre-process frames into frames of 224 x 224 resolution. I plan to use 30% (~5k) of the full dataset here due to technlogy limitation and 
+follow a 80-10-10 train/test/val pattern for performance evaluation. 
+
+So in total I will use about 15k data for the pre-training process and then test and validate on the rest 20% seperately. 
+
