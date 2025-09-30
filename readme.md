@@ -35,6 +35,15 @@ quality the higher chance we can get more robust and better results from models 
 This data set has pre-processed frames for each video clip in 224 x 224 resolution. I plan to use 50% (~5k) of the full dataset here due to 
 technlogy limitation and follow a 80-10-10 train/test/val pattern for performance evaluation. 
 
+### Examples of the multiple expressions in MAFW
+
+<table id="tfhover" class="tftable" border="1">
+<tr><td width="30%"><image src="samples-gif/anger-disgust_08827.gif" /></td><td width="15%"><b>Anger<br/>Disgust</b></td><td>English: A man glances his head to the side at the words of the man in front of him. The frown and a downward pull on the lip corners.<br />中文：一个男人听到面前的男人的话语后将头瞥向一边。皱眉，嘴角下拉。</td></tr>
+<tr><td><image src="samples-gif/fear_sad_07213.gif" /></td><td><b>Fear<br/>Sadness</b></td><td>English: A woman squats on the ground and talks to a man tearfully. The marked frown and a downward pull on the lip corners.<br />中文：一个女人蹲坐在地上满含泪水的在和男人说话。皱眉，嘴角下拉。</td></tr>
+<tr><td><image src="samples-gif/fear-sad-anxiety_09878.gif" /></td><td><b>Fear<br/>Sadness<br/>Anxiety</b></td><td>English: A woman begs someone. The marked frown, the wide eyes and the slightly open mouth.<br />中文：一个女人哀求着。皱眉，瞪眼，嘴巴微张。</td></tr>
+<tr><td><image src="samples-gif/anger-disgust-contempt_15120.gif" /></td><td><b>Anger<br/>Disgust<br/>Contempt</b></td><td>English: A woman makes a condescending sarcasm at the other person. The raised chin, the raised eyebrows, the closed eyes and the frown.<br />中文：一个女人居高临下地挖苦对方。下巴上扬，挑眉，闭眼，皱眉。</td></tr>
+</table>
+
 2. FERV39K: https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_FERV39k_A_Large-Scale_Multi-Scene_Dataset_for_Facial_Expression_Recognition_in_CVPR_2022_paper.pdf
 The open dataset, FERV39K, a large-scale multi-scene dataset, coined as FERV39k. This dataset is novel due to the following
 three aspects: (1) multi-scene hierarchy and expression class, (2) generation of candidate video clips, (3) trusted manual
